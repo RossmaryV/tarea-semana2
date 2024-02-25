@@ -1,0 +1,376 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: top;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_inner {
+  padding: 50px 10% 30px;
+}
+
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+}
+.key h1{
+  font-size: 2.5rem;
+}
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+
+.caffee_menu_image {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+ 
+  
+}
+
+.cafe1{
+  top: 100px;
+  width: 49%;
+  height: 300px; 
+  margin-left: 400px; 
+  position: relative; top: -210px
+}
+
+.cafe2{
+  
+  position: relative; top: -290px
+}
+
+.cafe3{
+  top: 100px;
+  width: 49%;
+  height: 300px; 
+  margin-left: 400px; 
+  position: relative; top: -500px
+}
+
+
+
+/* Estilos generales */
+
+/* Estilos específicos para el encabezado con la imagen de fondo */
+
+.key {
+  position: top; /* Agregar posición relativa para establecer la referencia para el posicionamiento absoluto */
+  height: 500px;
+  background: center / cover no-repeat url("../images2/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+}
+
+.key h1 {
+  position: absolute; /* Posicionamiento absoluto para el texto */
+  top: 20px; /* Ajustar la posición vertical del texto */
+  left: 20px; /* Ajustar la posición horizontal del texto */
+  transform: translate(-50%); /* Centrar el texto dentro del contenedor */
+  font-size: 2.5rem;
+  color: white; /* Color del texto */
+  text-align: center; /* Alinear el texto al centro */
+}
+
+
+.key.section_inner h1 {
+  margin-bottom: 0px; /* Espacio entre el título y el párrafo */
+  margin-top: 200px;
+  margin-left: 200px;
+  color: black
+}
+
+.key.section_inner p{
+  margin-top: 200px;
+  margin-right: 200px;
+  margin-left: -15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container img {
+  margin-left: 20px; /* Puedes ajustar el margen según sea necesario */
+  width: 35%;
+}
+
+.container p {
+  width: 60%;
+}
+
+
+.container2 {
+  position: relative;
+  background-image: url('images2/sample_menu_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1200px; /* Ajusta la altura del contenedor según sea necesario */
+  top: 40px;
+  left: 0;
+  z-index: 1; /* Asegura que la imagen de fondo esté detrás del contenido */
+}
+
+
+.container-menu1{
+  background-color: white;
+  display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+  align-items: center;
+  flex-wrap: wrap; 
+  border: 1px solid #ccc; /* Añadimos un borde */
+  padding: 20px; /* Añadimos espacio interno */
+  width: 48%; /* Ancho del cuadro */
+  height: 420px;
+  position: relative; top: -50px;
+  margin-bottom: 20px; 
+  
+  
+}
+
+.container-menu1 img{
+  top: 100px;
+  width: 49%;
+  height: 300px; 
+  margin-left: 183px; 
+  position: relative; top: -40px
+  
+
+}
+
+.container-menu1 p {
+ display: block;
+ flex-wrap: wrap; 
+ margin-right: 100px;
+ font-size: 16px; 
+}
+
+.container-menu1 h2 {
+  display: flex;
+  margin:0;
+  flex: 1;
+  margin-right: 100px;
+  font-size: 22px; 
+ }
+
+
+ .container-menu2{
+  background-color: white;
+  display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+  align-items: center;
+  flex-wrap: wrap; 
+  border: 1px solid #ccc; /* Añadimos un borde */
+  padding: 20px; /* Añadimos espacio interno */
+  width: 48%; /* Ancho del cuadro */
+  height: 420px;
+  margin-left: 450px;
+  margin-bottom: 20px; 
+  position: relative; top: -490px
+  
+  
+}
+
+.container-menu2 img{
+  top: 100px;
+  width: 49%;
+  height: 300px; 
+  margin-left: 183px; 
+  position: relative; top: -40px
+  
+
+}
+
+.container-menu2 p {
+ display: block;
+ flex-wrap: wrap; 
+ margin-right: 100px;
+ font-size: 16px; 
+}
+
+.container-menu2 h2 {
+  display: flex;
+  margin:0;
+  flex: 1;
+  margin-right: 100px;
+  font-size: 22px; 
+ }
+
+.union{
+  display: inline-block; 
+}
+
+.container-menu3{
+  background-color: white;
+  display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+  align-items: center;
+  flex-wrap: wrap; 
+  border: 1px solid #ccc; /* Añadimos un borde */
+  padding: 20px; /* Añadimos espacio interno */
+  width: 100%; /* Ancho del cuadro */
+  height: 450px;
+  margin-left: 0px;
+  margin-bottom: 20px; 
+  position: relative; top: -440px
+  
+  
+}
+
+.container-menu3 img{
+  top: 100px;
+  width: 49%;
+  height: 300px; 
+  margin-left: 183px; 
+  position: relative; top: -40px
+  
+
+}
+
+.container-menu3 p {
+ display: block;
+ flex-wrap: wrap; 
+ margin-right: 100px;
+ font-size: 16px; 
+}
+
+.container-menu3 h2 {
+  display: flex;
+  margin:0;
+  flex: 1;
+  margin-right: 100px;
+  font-size: 22px; 
+ }
+
+ .center{
+  position: relative; top: -450px
+ }
+
+ .center2{
+  position: relative; top: -50px;
+  margin-left: 280px;
+ }
+
+ dl {
+  margin: 0; /* Elimina el margen predeterminado de dl */
+  
+}
+
+dt {
+  font-weight: bold; /* Agrega negrita a los términos */
+  display: inline-block;
+  margin-right: 80px;
+}
+
+dd {
+  display: inline-block; /* Coloca los elementos dd uno al lado del otro */
+  vertical-align: top; /* Alinea los elementos dd en la parte superior */
+  margin: 0 10px 0 0; /* Añade un margen derecho para separar los elementos */
+}
+
+.penultimo{
+  position: center;
+  margin-left: 100px;
+}
+
+.pie-de-pagina {
+  background-color: #251e19; /* Color de fondo del footer */
+  max-height: 75px;
+  border-top: 1px solid #ccc; /* Borde superior del footer */
+  padding: 20px 0; /* Espaciado interno superior e inferior del footer */
+  
+}
+
+.pie-de-pagina nav {
+  text-align: center; /* Centra los enlaces del menú */
+  color: white;
+}
+
+.pie-de-pagina nav ul {
+  list-style: none; /* Quita los estilos de lista */
+  padding: 0; /* Quita el relleno de la lista */
+  color: white;
+}
+
+.pie-de-pagina nav ul li {
+  display: inline-block; /* Coloca los elementos del menú en línea */
+  margin: 0 10px; /* Espaciado horizontal entre los elementos del menú */
+  color: white;
+}
+
+.pie-de-pagina p {
+  text-align: center; /* Centra el texto de derechos de autor */
+  margin-top: 20px; /* Espaciado superior del texto de derechos de autor */
+  color: white;
+}
+
+.pie-de-pagina img{
+  max-width: 80px;
+  max-width: 80px;
+
+}
+
+
