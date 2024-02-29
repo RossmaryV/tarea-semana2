@@ -83,39 +83,51 @@ div,li {
 }
 
 .caffee_menu_image {
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 50%;
- 
+ width: 20%;
+border-radius: 50%;
   
 }
 
+.cafe{
+  width: 20%;
+  height: 100px;
+}
+
+.cafe img{
+  
+  position: relative; top: 200px
+}
+
+
 .cafe1{
-  top: 100px;
-  width: 49%;
-  height: 300px; 
+  width: 20%;
+  height: 100px; 
   margin-left: 400px; 
-  position: relative; top: -210px
+  position: relative; top: -100px
 }
 
 .cafe2{
-  
-  position: relative; top: -290px
+  width: 20%;
+  height: 100px;
+  position: relative; top: -60px
 }
 
-.cafe3{
-  top: 100px;
-  width: 49%;
-  height: 300px; 
+
+.cafe3 {
+  width: 20%;
+  height: 100px; 
   margin-left: 400px; 
-  position: relative; top: -500px
+  position: relative; top: -180px
 }
 
 
+.container-menu3 img{
+  width: 50%;
+  height: 50%; 
+  margin-left: 183px; 
+  position: relative; top: -40px
+}
 
-/* Estilos generales */
-
-/* Estilos específicos para el encabezado con la imagen de fondo */
 
 .key {
   position: top; /* Agregar posición relativa para establecer la referencia para el posicionamiento absoluto */
@@ -126,7 +138,7 @@ div,li {
 }
 
 .key h1 {
-  position: absolute; /* Posicionamiento absoluto para el texto */
+  position: absolute; 
   top: 20px; /* Ajustar la posición vertical del texto */
   left: 20px; /* Ajustar la posición horizontal del texto */
   transform: translate(-50%); /* Centrar el texto dentro del contenedor */
@@ -151,8 +163,7 @@ div,li {
 
 .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+ justify-content: space-between;
 }
 
 .container img {
@@ -170,8 +181,9 @@ div,li {
   background-image: url('images2/sample_menu_bg.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
-  height: 1200px; /* Ajusta la altura del contenedor según sea necesario */
+  height: 1100px; /* Ajusta la altura del contenedor según sea necesario */
   top: 40px;
   left: 0;
   z-index: 1; /* Asegura que la imagen de fondo esté detrás del contenido */
@@ -185,22 +197,20 @@ div,li {
   flex-wrap: wrap; 
   border: 1px solid #ccc; /* Añadimos un borde */
   padding: 20px; /* Añadimos espacio interno */
-  width: 48%; /* Ancho del cuadro */
+  width: 49%; /* Ancho del cuadro */
   height: 420px;
   position: relative; top: -50px;
   margin-bottom: 20px; 
-  
   
 }
 
 .container-menu1 img{
   top: 100px;
-  width: 49%;
-  height: 300px; 
+  width: 55%;
+  height: 330px; 
   margin-left: 183px; 
   position: relative; top: -40px
   
-
 }
 
 .container-menu1 p {
@@ -226,23 +236,18 @@ div,li {
   flex-wrap: wrap; 
   border: 1px solid #ccc; /* Añadimos un borde */
   padding: 20px; /* Añadimos espacio interno */
-  width: 48%; /* Ancho del cuadro */
+  width: 49%; /* Ancho del cuadro */
   height: 420px;
-  margin-left: 450px;
+  margin-left: 420px;
   margin-bottom: 20px; 
   position: relative; top: -490px
-  
-  
 }
 
 .container-menu2 img{
-  top: 100px;
-  width: 49%;
-  height: 300px; 
+  width: 55%;
+  height: 330px; 
   margin-left: 183px; 
   position: relative; top: -40px
-  
-
 }
 
 .container-menu2 p {
@@ -266,33 +271,25 @@ div,li {
 
 .container-menu3{
   background-color: white;
-  display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+  /* Utilizamos flexbox para alinear verticalmente los elementos */
   align-items: center;
+  display: block;
   flex-wrap: wrap; 
   border: 1px solid #ccc; /* Añadimos un borde */
   padding: 20px; /* Añadimos espacio interno */
-  width: 100%; /* Ancho del cuadro */
-  height: 450px;
-  margin-left: 0px;
+  width: 98%; /* Ancho del cuadro */
+  height: 350px;
+  margin:20px;
   margin-bottom: 20px; 
-  position: relative; top: -440px
-  
-  
-}
-
-.container-menu3 img{
-  top: 100px;
-  width: 49%;
-  height: 300px; 
-  margin-left: 183px; 
-  position: relative; top: -40px
-  
-
+  position: relative; top: -470px;
+  border-color: rgb(47, 255, 127);
+  border-width: 20px;
 }
 
 .container-menu3 p {
- display: block;
- flex-wrap: wrap; 
+ display: flex;
+ 
+ width: 80%;
  margin-right: 100px;
  font-size: 16px; 
 }
@@ -300,10 +297,12 @@ div,li {
 .container-menu3 h2 {
   display: flex;
   margin:0;
+  width: 80%;
   flex: 1;
   margin-right: 100px;
   font-size: 22px; 
  }
+
 
  .center{
   position: relative; top: -450px
@@ -323,6 +322,7 @@ dt {
   font-weight: bold; /* Agrega negrita a los términos */
   display: inline-block;
   margin-right: 80px;
+  width: 80px;
 }
 
 dd {
@@ -339,6 +339,7 @@ dd {
 .pie-de-pagina {
   background-color: #251e19; /* Color de fondo del footer */
   max-height: 75px;
+  height: 75px;
   border-top: 1px solid #ccc; /* Borde superior del footer */
   padding: 20px 0; /* Espaciado interno superior e inferior del footer */
   
@@ -370,7 +371,9 @@ dd {
 .pie-de-pagina img{
   max-width: 80px;
   max-width: 80px;
-
 }
+
+
+
 
 
